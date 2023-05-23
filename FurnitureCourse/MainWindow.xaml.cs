@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FurnitureCourse.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace FurnitureCourse
         public MainWindow()
         {
             InitializeComponent();
+            FrameMain.Navigate(new LoginPage());
+        }
+
+        private void FrameMain_ContentRendered(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
