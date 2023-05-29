@@ -23,8 +23,8 @@
                 <TextBox HorizontalAlignment="Right" Visibility="Collapsed" Name="TBCapt"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button Name="BtnGuest" Click="BtnGuest_Click" Content="Войти как гость"/>
-                <Button Name="BtnLogin" Click="BtnGuest_Click" Content="Войти"/>
+                <Button Name="BtnRegistration" Click="BtnRegistration_Click" Content="Зарегистрироваться"/>
+                <Button Name="BtnLogin" Click="BtnLogin_Click" Content="Войти"/>
             </StackPanel>
         </StackPanel>
     </Grid>

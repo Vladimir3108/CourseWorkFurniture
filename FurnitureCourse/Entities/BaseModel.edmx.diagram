@@ -4,20 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="95469ae4ad13434fab0d18a3622cd18c" Name="Diagram1">
-        <EntityTypeShape EntityType="FurnitureModel.Category" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.Furniture" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.Material" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.Order" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.Role" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="FurnitureModel.User" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
-        <AssociationConnector Association="FurnitureModel.FK_Furniture_Category" ManuallyRouted="false" />
-        <AssociationConnector Association="FurnitureModel.FK_Furniture_Manufacturer" ManuallyRouted="false" />
-        <AssociationConnector Association="FurnitureModel.FK_Furniture_Material" ManuallyRouted="false" />
-        <AssociationConnector Association="FurnitureModel.FK_Order_Furniture" ManuallyRouted="false" />
-        <AssociationConnector Association="FurnitureModel.FK_Order_User" ManuallyRouted="false" />
-        <AssociationConnector Association="FurnitureModel.FK_User_Role" ManuallyRouted="false" />
+      <Diagram DiagramId="c65a894c5a51493c800466b0550ee3b4" Name="Diagram1">
+        <EntityTypeShape EntityType="FurnitureSQLModel.Category" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.Furniture" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.Material" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.Order" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.Role" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureSQLModel.User" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_Furniture_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_Furniture_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_Furniture_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_Order_Furniture" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureSQLModel.FK_User_Role" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

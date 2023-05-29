@@ -25,9 +25,16 @@ namespace FurnitureCourse.Pages
             InitializeComponent();
         }
 
-        private void BtnGuest_Click(object sender, RoutedEventArgs e)
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnRegistration_Click(object sender, RoutedEventArgs e)
+        {
+            RegistrationWindow register = new RegistrationWindow();
+            register.Show();
+            Window.GetWindow(this).Close();
         }
     }
 }

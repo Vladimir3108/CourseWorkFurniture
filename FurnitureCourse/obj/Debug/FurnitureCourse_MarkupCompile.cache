@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\obj\Debug\
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\
 FurnitureCourse
 none
 false
 DEBUG;TRACE
-C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\App.xaml
-2-1648024915
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\App.xaml
+4-978018428
 21929009593
-16-1672478756
-18-319909997
-MainWindow.xaml;Pages\LoginPage.xaml;
+19-1356156716
+18-524821195
+MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegistrationPage.xaml;RegistrationWindow.xaml;
 
 False
 

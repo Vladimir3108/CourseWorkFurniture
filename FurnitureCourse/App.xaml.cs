@@ -13,5 +13,7 @@ namespace FurnitureCourse
     /// </summary>
     public partial class App : Application
     {
+        public static Entities.FurnitureSQLEntities Context { get; } = new Entities.FurnitureSQLEntities(); 
+        public static Entities.User CurrentUser = null;
     }
 }
