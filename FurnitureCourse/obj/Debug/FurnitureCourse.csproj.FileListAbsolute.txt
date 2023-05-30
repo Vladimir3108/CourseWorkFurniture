@@ -24,8 +24,6 @@ C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\bin\Debug\EntityF
 C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\obj\Debug\FurnitureCourse_Content.g.cs
 C:\Users\10210232\source\repos\FurnitureCourse\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.CopyComplete
-C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.AssemblyReference.cache
-C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.SuggestedBindingRedirects.cache
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\MainWindow.g.cs
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\RegistrationPage.g.cs
@@ -55,3 +53,14 @@ C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Fur
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.GenerateResource.cache
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.CoreCompileInputs.cache
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csproj.CopyComplete
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\FurnitureCourse.csprojAssemblyReference.cache
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\CategoryPage.g.cs
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\FurniturePage.g.cs
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\ManufacturerPage.g.cs
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\MaterialPage.g.cs
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\UserPage.g.cs
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\CategoryPage.baml
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\FurniturePage.baml
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\ManufacturerPage.baml
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\MaterialPage.baml
+C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\obj\Debug\Pages\UserPage.baml
