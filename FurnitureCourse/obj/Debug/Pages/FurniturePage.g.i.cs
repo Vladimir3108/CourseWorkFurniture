@@ -40,70 +40,6 @@ namespace FurnitureCourse.Pages {
     /// </summary>
     public partial class FurniturePage : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 16 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtArticul;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 20 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtMaterialName;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 25 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtCost;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 29 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtDiscountMax;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 37 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtDiscountAm;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 41 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox TxtInStock;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 46 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox ImageService;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 51 "..\..\..\Pages\FurniturePage.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button SaveBtn;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -132,39 +68,6 @@ namespace FurnitureCourse.Pages {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.TxtArticul = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 2:
-            this.TxtMaterialName = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 3:
-            this.TxtCost = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 4:
-            this.TxtDiscountMax = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 5:
-            this.TxtDiscountAm = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 6:
-            this.TxtInStock = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 7:
-            this.ImageService = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 8:
-            this.SaveBtn = ((System.Windows.Controls.Button)(target));
-            
-            #line 51 "..\..\..\Pages\FurniturePage.xaml"
-            this.SaveBtn.Click += new System.Windows.RoutedEventHandler(this.SaveBtn_Click);
-            
-            #line default
-            #line hidden
-            return;
-            }
             this._contentLoaded = true;
         }
     }
