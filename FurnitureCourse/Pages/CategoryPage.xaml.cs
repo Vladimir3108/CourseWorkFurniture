@@ -24,5 +24,58 @@ namespace FurnitureCourse.Pages
         {
             InitializeComponent();
         }
+
+        private void UpdateCategories()
+        {
+            var categories = App.Context.Categories.ToList();
+            ListCategories.ItemsSource = categories;
+        }
+
+        private void LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show($"Вы уверены, что хотите выйти?",
+                "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Exclamation) == MessageBoxResult.Yes)
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Window.GetWindow(this).Close();
+            }
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddEditCategoryPage());
+        }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.FrameMain.Navigate(new AdminPage());
+            mainWindow.Show();
+            Window.GetWindow(this).Close();
+        }
+
+        private void EditBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var currentCategories = (sender as Button).DataContext as Entities.Category;
+            NavigationService.Navigate(new AddEditCategoryPage(currentCategories));
+        }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var currentCategories = (sender as Button).DataContext as Entities.Category;
+            if (MessageBox.Show($"Вы уверены, что хотите удалить категорию: {currentCategories.Category1}?",
+                    "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                App.Context.Categories.Remove(currentCategories);
+                App.Context.SaveChanges();
+                UpdateCategories();
+            }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateCategories();
+        }
     }
 }

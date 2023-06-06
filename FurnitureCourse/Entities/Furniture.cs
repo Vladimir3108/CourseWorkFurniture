@@ -21,12 +21,62 @@ namespace FurnitureCourse.Entities
         }
     
         public int ID_F { get; set; }
+        public string CategoryName
+        {
+            get
+            {
+                return Category.Category1.ToString();
+            }
+        }
         public int ID_C { get; set; }
+        public string ManufacturerName
+        {
+            get
+            {
+                return Manufacturer.Manufacturer1.ToString();
+            }
+        }
         public int ID_M { get; set; }
+        public string MaterialName
+        {
+            get
+            {
+                return Material.Name.ToString();
+            }
+        }
         public int ID_MA { get; set; }
         public string Image { get; set; }
+        public string Photo
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(Image) || String.IsNullOrWhiteSpace(Image))
+                {
+                    return "/Resources/logo.png";
+                }
+                else
+                {
+                    return "/Resources/" + Image;
+                }
+            }
+        }
         public decimal Price { get; set; }
-    
+
+        public static string AdminControlsVisibility
+        {
+            get
+            {
+                if (App.CurrentUser.ID_R == 2)
+                {
+                    return "Collapsed";
+                }
+                else
+                {
+                    return "Visible";
+                }
+            }
+        }
+
         public virtual Category Category { get; set; }
         public virtual Manufacturer Manufacturer { get; set; }
         public virtual Material Material { get; set; }

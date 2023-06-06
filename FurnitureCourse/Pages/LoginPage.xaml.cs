@@ -27,7 +27,25 @@ namespace FurnitureCourse.Pages
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+            var currect_user = App.Context.Users.FirstOrDefault(u => u.Login == TBoxLogin.Text && u.Password == PBoxPassword.Password);
+            if (currect_user != null)
+            {
+                App.CurrentUser = currect_user;
+                if (currect_user.ID_R == 1)
+                {
+                    NavigationService.Navigate(new AdminPage());
+                }
+                else
+                {
+                    FurnitureWindow game = new FurnitureWindow();
+                    game.Show();
+                    Window.GetWindow(this).Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Пользователя не существует", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void BtnRegistration_Click(object sender, RoutedEventArgs e)

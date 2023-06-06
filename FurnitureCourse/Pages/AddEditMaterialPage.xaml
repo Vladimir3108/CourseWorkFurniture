@@ -6,9 +6,22 @@
       xmlns:local="clr-namespace:FurnitureCourse.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditMaterialPage">
+      Title="Добавление материалов">
 
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Style="{StaticResource BlockCommon}" Text="Название*"></TextBlock>
+                    <TextBox Name="TxtName" MaxLength="100"></TextBox>
+                    <Button Height="30" Width="200" Margin="5" Name="SaveBtn" Click="SaveBtn_Click" Content="Coxpанить"></Button>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button Name="BackBtn" Click="BackBtn_Click" Content="Назад"/>
+            <Button x:Name="LogOutBtn" Click="LogOutBtn_Click" Content="Выйти"/>
+        </StackPanel>
     </Grid>
 </Page>

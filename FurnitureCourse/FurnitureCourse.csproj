@@ -103,6 +103,27 @@
     <Compile Include="Entities\User.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="FurnitureWindow.xaml.cs">
+      <DependentUpon>FurnitureWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEditCategoryPage.xaml.cs">
+      <DependentUpon>AddEditCategoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEditFurniturePage.xaml.cs">
+      <DependentUpon>AddEditFurniturePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEditMaterialPage.xaml.cs">
+      <DependentUpon>AddEditMaterialPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEditManufacturer.xaml.cs">
+      <DependentUpon>AddEditManufacturer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEditUserPage.xaml.cs">
+      <DependentUpon>AddEditUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CategoryPage.xaml.cs">
       <DependentUpon>CategoryPage.xaml</DependentUpon>
     </Compile>
@@ -124,6 +145,10 @@
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="FurnitureWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -136,6 +161,30 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddEditCategoryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\AddEditFurniturePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddEditMaterialPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\AddEditManufacturer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\AddEditUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CategoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -224,6 +273,13 @@
       <DependentUpon>BaseModel.edmx</DependentUpon>
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\divan.jpg" />
+    <Resource Include="Resources\komod.jpg" />
+    <Resource Include="Resources\kreslo.jpg" />
+    <Resource Include="Resources\krovat.jpg" />
+    <Resource Include="Resources\stol.jpg" />
+    <Resource Include="Resources\stul.jpg" />
+    <Resource Include="Pages\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

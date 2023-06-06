@@ -24,6 +24,21 @@ namespace FurnitureCourse.Entities
         public string Surname { get; set; }
         public string Name { get; set; }
         public string Patronymic { get; set; }
+
+        public string FIO
+        {
+            get
+            {
+                if (Patronymic == null)
+                {
+                    return Surname + " " + Name;
+                }
+                else
+                {
+                    return Surname + " " + Name + " " + Patronymic;
+                }
+            }
+        }
         public string Login { get; set; }
         public string Password { get; set; }
         public int ID_R { get; set; }

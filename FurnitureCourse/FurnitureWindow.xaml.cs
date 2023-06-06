@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FurnitureCourse.Pages
+namespace FurnitureCourse
 {
     /// <summary>
-    /// Логика взаимодействия для AddEditProduct.xaml
+    /// Логика взаимодействия для FurnitureWindow.xaml
     /// </summary>
-    public partial class AddEditProduct : Page
+    public partial class FurnitureWindow : Window
     {
-        public AddEditProduct()
+        public FurnitureWindow()
         {
             InitializeComponent();
+        }
+
+        private void FrameMain_ContentRendered(object sender, EventArgs e)
+        {
+
         }
     }
 }
