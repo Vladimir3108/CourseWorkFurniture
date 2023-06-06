@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\10210232\Source\Repos\CourseWorkFurniture\FurnitureCourse\App.xaml
-10-43000073
+101931788513
 2-1229262296
-26-1761994988
+26-493051123
 18-1351771499
-MainWindow.xaml;Pages\AddEditCategoryPage.xaml;Pages\CategoryPage.xaml;Pages\FurniturePage.xaml;Pages\LoginPage.xaml;Pages\ManufacturerPage.xaml;Pages\MaterialPage.xaml;Pages\RegistrationPage.xaml;Pages\UserPage.xaml;RegistrationWindow.xaml;
+MainWindow.xaml;Pages\AddEditMaterialPage.xaml;Pages\CategoryPage.xaml;Pages\FurniturePage.xaml;Pages\LoginPage.xaml;Pages\ManufacturerPage.xaml;Pages\MaterialPage.xaml;Pages\RegistrationPage.xaml;Pages\UserPage.xaml;RegistrationWindow.xaml;
 
 True
 
