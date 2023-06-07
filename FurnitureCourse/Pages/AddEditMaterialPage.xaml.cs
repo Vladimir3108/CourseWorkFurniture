@@ -90,7 +90,7 @@ namespace FurnitureCourse.Pages
                     App.Context.Materials.Add(material);
                     App.Context.SaveChanges();
                     MessageBox.Show("Материал успешно создан", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    NavigationService.Navigate(new CategoryPage());
+                    NavigationService.Navigate(new MaterialPage());
                 }
                 else
                 {
@@ -98,7 +98,7 @@ namespace FurnitureCourse.Pages
 
                     App.Context.SaveChanges();
                     MessageBox.Show("Материал успешно обновлен", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    NavigationService.Navigate(new CategoryPage());
+                    NavigationService.Navigate(new MaterialPage());
                 }
             }
         }

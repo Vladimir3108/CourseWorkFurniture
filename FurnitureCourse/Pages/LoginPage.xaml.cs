@@ -37,8 +37,9 @@ namespace FurnitureCourse.Pages
                 }
                 else
                 {
-                    FurnitureWindow game = new FurnitureWindow();
-                    game.Show();
+                    FurnitureWindow furniture = new FurnitureWindow();
+                    furniture.FrameMain.Navigate(new FurniturePage());
+                    furniture.Show();
                     Window.GetWindow(this).Close();
                 }
             }

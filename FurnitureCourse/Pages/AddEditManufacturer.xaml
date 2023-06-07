@@ -9,6 +9,11 @@
       Title="Добавление производителя">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Background="{StaticResource ColorSecondary}"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical">
@@ -19,7 +24,7 @@
             </StackPanel>
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal">
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Name="BackBtn" Click="BackBtn_Click" Content="Назад"/>
             <Button x:Name="LogOutBtn" Click="LogOutBtn_Click" Content="Выйти"/>
         </StackPanel>

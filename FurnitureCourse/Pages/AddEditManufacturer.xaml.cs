@@ -89,7 +89,7 @@ namespace FurnitureCourse.Pages
                     App.Context.Manufacturers.Add(manufacturer);
                     App.Context.SaveChanges();
                     MessageBox.Show("Производитель успешно создан", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    NavigationService.Navigate(new CategoryPage());
+                    NavigationService.Navigate(new ManufacturerPage());
                 }
                 else
                 {
@@ -97,7 +97,7 @@ namespace FurnitureCourse.Pages
 
                     App.Context.SaveChanges();
                     MessageBox.Show("Производитель успешно обновлен", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    NavigationService.Navigate(new CategoryPage());
+                    NavigationService.Navigate(new ManufacturerPage());
                 }
             }
         }

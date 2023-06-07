@@ -43,6 +43,7 @@ namespace FurnitureCourse.Pages
             else TxtPatronymic.Text = currentuser.Patronymic;
             TxtLogin.Text = currentuser.Login;
             TxtPass.Text = currentuser.Password;
+            ComboRole.SelectedIndex = currentuser.ID_R - 1;
         }
 
         private void LogOutBtn_Click(object sender, RoutedEventArgs e)

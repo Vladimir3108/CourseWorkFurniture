@@ -23,7 +23,7 @@ namespace FurnitureCourse.Pages
         public FurniturePage()
         {
             InitializeComponent();
-            if (App.CurrentUser == null || App.CurrentUser.ID_R == 3)
+            if (App.CurrentUser == null || App.CurrentUser.ID_R == 2)
             {
                 AddBtn.Visibility = Visibility.Collapsed;
                 BackBtn.Visibility = Visibility.Collapsed;

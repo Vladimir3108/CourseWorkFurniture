@@ -11,9 +11,6 @@
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <StackPanel>
-                    <TextBlock Style="{StaticResource BlockHeader}" Text="Регистрация"/>
-                </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Style="{StaticResource BlockCommon}" Text="Фамилия*"></TextBlock>
                     <TextBox Name="TxtSurname" MaxLength="50"></TextBox>

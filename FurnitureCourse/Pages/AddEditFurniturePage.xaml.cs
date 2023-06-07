@@ -33,9 +33,9 @@ namespace FurnitureCourse.Pages
             InitializeComponent();
             Title = "Редактирование мебели";
             currentfurniture = furniture;
-            ComboCategory.SelectedIndex = currentfurniture.ID_C;
-            ComboMaterial.SelectedIndex = currentfurniture.ID_MA;
-            ComboManufacturer.SelectedIndex = currentfurniture.ID_M;
+            ComboCategory.SelectedIndex = currentfurniture.ID_C - 1;
+            ComboMaterial.SelectedIndex = currentfurniture.ID_MA - 1;
+            ComboManufacturer.SelectedIndex = currentfurniture.ID_M - 1;
             TxtPrice.Text = currentfurniture.Price.ToString();
             TxtImage.Text = currentfurniture.Image;
         }
@@ -64,7 +64,7 @@ namespace FurnitureCourse.Pages
                 errorBuilder.AppendLine("Выберите производителя;");
             if (string.IsNullOrWhiteSpace(TxtPrice.Text))
                 errorBuilder.AppendLine("Цена обязателена для заполнения;");
-            if (int.Parse(TxtPrice.Text) <= 0) 
+            if (decimal.Parse(TxtPrice.Text) <= 0) 
                 errorBuilder.AppendLine("Цена должна быть положительнойS;");
             if (errorBuilder.Length > 0)
                 errorBuilder.Insert(0, "Устраните следующие ошибки:\n");
@@ -97,8 +97,8 @@ namespace FurnitureCourse.Pages
             var errorMessage = CheckErrors();
             string img;
             if (TxtImage.Text != null)
-                img = "NULL";
-            else img = TxtImage.Text;
+                img = TxtImage.Text;
+            else img = "NULL";
 
             if (errorMessage.Length > 0)
             {
@@ -116,7 +116,7 @@ namespace FurnitureCourse.Pages
                         .Select(p => p.ID_MA).FirstOrDefault(),
                         ID_M = App.Context.Manufacturers.Where(p => p.Manufacturer1 == ComboManufacturer.SelectedItem.ToString())
                         .Select(p => p.ID_M).FirstOrDefault(),
-                        Price = int.Parse(TxtPrice.Text),
+                        Price = decimal.Parse(TxtPrice.Text),
                         Image = img
                     };
 
@@ -133,7 +133,7 @@ namespace FurnitureCourse.Pages
                         .Select(p => p.ID_MA).FirstOrDefault();
                     currentfurniture.ID_M = App.Context.Manufacturers.Where(p => p.Manufacturer1 == ComboManufacturer.SelectedItem.ToString())
                         .Select(p => p.ID_M).FirstOrDefault();
-                    currentfurniture.Price = int.Parse(TxtPrice.Text);
+                    currentfurniture.Price = decimal.Parse(TxtPrice.Text);
                     currentfurniture.Image = img;
 
                     App.Context.SaveChanges();

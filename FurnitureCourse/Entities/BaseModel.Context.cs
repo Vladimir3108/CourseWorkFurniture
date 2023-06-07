@@ -13,10 +13,10 @@ namespace FurnitureCourse.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class FurnitureSQLEntities : DbContext
+    public partial class FurnitureSQLEntities1 : DbContext
     {
-        public FurnitureSQLEntities()
-            : base("name=FurnitureSQLEntities")
+        public FurnitureSQLEntities1()
+            : base("name=FurnitureSQLEntities1")
         {
         }
     
@@ -31,7 +31,6 @@ namespace FurnitureCourse.Entities
         public virtual DbSet<Material> Materials { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

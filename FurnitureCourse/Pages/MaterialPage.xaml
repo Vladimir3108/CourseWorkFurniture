@@ -27,7 +27,7 @@
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="1">
                                 <TextBlock Style="{StaticResource BlockDescription}" Width="auto"
-                                           Text="{Binding NameOne}"/>
+                                           Text="{Binding Name}"/>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <Button Name="EditBtn" Click="EditBtn_Click" Content="Редактировать"></Button>
                                     <Button Name="DeleteBtn" Click="DeleteBtn_Click" Content="Удалить"></Button>
@@ -40,7 +40,7 @@
         </ListView>
         <Button HorizontalAlignment="Left" Grid.Row="1" Content="Назад" Name="BackBtn" Click="BackBtn_Click"/>
         <Button HorizontalAlignment="Right" Grid.Row="1"
-                Content="Добавить ингредиент" Name="AddBtn" Click="AddBtn_Click"/>
+                Content="Добавить материал" Name="AddBtn" Click="AddBtn_Click"/>
         <Button HorizontalAlignment="Center" Grid.Row="1" Content="Выйти" Name="LogOut" Click="LogOut_Click"/>
     </Grid>
 </Page>

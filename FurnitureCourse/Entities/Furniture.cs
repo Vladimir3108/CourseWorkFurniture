@@ -21,6 +21,11 @@ namespace FurnitureCourse.Entities
         }
     
         public int ID_F { get; set; }
+        public int ID_C { get; set; }
+        public int ID_M { get; set; }
+        public int ID_MA { get; set; }
+        public string Image { get; set; }
+        public decimal Price { get; set; }
         public string CategoryName
         {
             get
@@ -28,7 +33,7 @@ namespace FurnitureCourse.Entities
                 return Category.Category1.ToString();
             }
         }
-        public int ID_C { get; set; }
+
         public string ManufacturerName
         {
             get
@@ -36,7 +41,7 @@ namespace FurnitureCourse.Entities
                 return Manufacturer.Manufacturer1.ToString();
             }
         }
-        public int ID_M { get; set; }
+
         public string MaterialName
         {
             get
@@ -44,8 +49,7 @@ namespace FurnitureCourse.Entities
                 return Material.Name.ToString();
             }
         }
-        public int ID_MA { get; set; }
-        public string Image { get; set; }
+
         public string Photo
         {
             get
@@ -60,7 +64,6 @@ namespace FurnitureCourse.Entities
                 }
             }
         }
-        public decimal Price { get; set; }
 
         public static string AdminControlsVisibility
         {

@@ -24,6 +24,9 @@ namespace FurnitureCourse.Entities
         public string Surname { get; set; }
         public string Name { get; set; }
         public string Patronymic { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public int ID_R { get; set; }
 
         public string FIO
         {
@@ -39,10 +42,15 @@ namespace FurnitureCourse.Entities
                 }
             }
         }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public int ID_R { get; set; }
-    
+
+        public string NameRole
+        {
+            get
+            {
+                return Role.Role1.ToString();
+            }
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
         public virtual Role Role { get; set; }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FurnitureCourse"
         mc:Ignorable="d"
-        Title="Furniture" Height="420" Width="450">
+        Title="Мебельный магазин" Height="450" Width="450">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="85"/>
@@ -17,6 +17,6 @@
         <Image Source="/Resources/logo.png" Width="100" HorizontalAlignment="Left"></Image>
         <TextBlock Style="{StaticResource BlockCommon}" Margin="10" Name="TBlockUsername" HorizontalAlignment="Right" Width="200"></TextBlock>
         <TextBlock Style="{StaticResource BlockHeader}" Text="{Binding ElementName=FrameMain, Path=Content.Title}"/>
-        <Frame Name="FrameMain" NavigationUIVisibility="Hidden" Grid.Row="1" ContentRendered="FrameMain_ContentRendered"/>
+        <Frame Name="FrameMain" NavigationUIVisibility="Hidden" Grid.Row="1"/>
     </Grid>
 </Window>

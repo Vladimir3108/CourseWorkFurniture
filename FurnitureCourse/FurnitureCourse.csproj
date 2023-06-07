@@ -97,9 +97,6 @@
     <Compile Include="Entities\Role.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\sysdiagram.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entities\User.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -263,6 +260,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Resource Include="Resources\divan.jpg" />
+    <Resource Include="Resources\komod.jpg" />
+    <Resource Include="Resources\kreslo.jpg" />
+    <Resource Include="Resources\krovat.jpg" />
+    <Resource Include="Resources\stol.jpg" />
+    <Resource Include="Resources\stul.jpg" />
+    <Resource Include="Pages\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Entities\BaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BaseModel.edmx</DependentUpon>
@@ -273,13 +279,6 @@
       <DependentUpon>BaseModel.edmx</DependentUpon>
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
-    <Resource Include="Resources\divan.jpg" />
-    <Resource Include="Resources\komod.jpg" />
-    <Resource Include="Resources\kreslo.jpg" />
-    <Resource Include="Resources\krovat.jpg" />
-    <Resource Include="Resources\stol.jpg" />
-    <Resource Include="Resources\stul.jpg" />
-    <Resource Include="Pages\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

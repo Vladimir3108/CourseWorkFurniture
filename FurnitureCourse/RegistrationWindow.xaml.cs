@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FurnitureCourse.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FurnitureCourse
@@ -27,12 +29,13 @@ namespace FurnitureCourse
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void FrameMain_ContentRendered(object sender, EventArgs e)
-        {
-
+            if (MessageBox.Show($"Вы уверены, что хотите вернуться?\nНесохраненные данные могут быть утеряны",
+                "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Exclamation) == MessageBoxResult.Yes)
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Window.GetWindow(this).Close();
+            }
         }
     }
 }
